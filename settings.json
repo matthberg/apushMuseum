@@ -1,0 +1,9 @@
+{
+ "title":"Cold War Museum",
+ "logoURL":"./museumLogo.svg",
+ "stylesURLs":["./css/blah.css","./css/flexboxgrid.min.css"],
+ "scriptsURLs":["./js/smoothscroll.min.js"],
+ "links":["introduction","layout","catalog","sources"],
+ "author":"Matthew Sundberg",
+ "year":2016
+}

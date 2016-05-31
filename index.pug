@@ -1,0 +1,13 @@
+extends ./template.pug
+include ./mixins.pug
+block content
+ //-INTRODUCTION
+ h1#introduction introduction
+ p
+ //- LAYOUT
+ h1#layout layout
+ +slider("slidey")
+  |sdf
+  +slide("./logo.svg","bsdf")
+   |fsdfs
+  +slide("sfsdf.sdf")

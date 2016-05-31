@@ -1,0 +1,14 @@
+mixin slider(id)
+ div.slider-pro(id=id)
+  div.sp-slides
+   block
+
+mixin slide(image,alt)
+ div.sp-slide
+  if image & alt
+   img(src=image,alt=alt).sp-image
+  else if image
+   img(src=image).sp-image
+  if block
+   .sp-layer
+    block
