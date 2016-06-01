@@ -1,14 +1,12 @@
-mixin slider(id)
- div.slider-pro(id=id)
-  div.sp-slides
+-var US = "United States of America"
+-var Sov = "Soviet Unition"
+mixin item(title,src,year,country,where)
+ figure.museumItem
+  img(src="./img/"+src,alt=title)
+  figcaption
+   h3 #{title}
+   ul.caps
+    li Year: #{year}
+    li Country: #{country}
+    li In Museum: #{where}
    block
-
-mixin slide(image,alt)
- div.sp-slide
-  if image & alt
-   img(src=image,alt=alt).sp-image
-  else if image
-   img(src=image).sp-image
-  if block
-   .sp-layer
-    block
