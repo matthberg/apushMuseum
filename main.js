@@ -13,4 +13,5 @@ var html = fn(locals);
 fs.writeFileSync('../apushMuseumCompile/index.html', html);
 fs.writeFileSync('../apushMuseumCompile/js/smoothscroll.js',fs.readFileSync('./node_modules/smoothscroll/smoothscroll.min.js'));
 fs.writeFileSync('../apushMuseumCompile/css/flexboxgrid.css',fs.readFileSync('./node_modules/flexboxgrid/dist/flexboxgrid.min.css'));
+fs.writeFileSync('../apushMuseumCompile/js/script.js',fs.readFileSync('./js/script.js'));
 console.log('Saved!');

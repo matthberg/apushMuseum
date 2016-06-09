@@ -17,4 +17,9 @@ mixin item(title,src,year,country,where)
       b In Museum: 
       |#{where}
    block
-   
+
+mixin section(title)
+ section(id=title)
+  a(href="#"+title).idLink #
+  h2.inline #{title}
+  block

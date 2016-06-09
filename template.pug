@@ -1,15 +1,16 @@
+include ./mixins.pug
 doctype html
 html
  head
   title= title
   for styleURL in stylesURLs
-   link(rel='stylesheet',href=styleURL,type='text/css')
+   link(rel='stylesheet',href="./css/"+styleURL,type='text/css')
  body
   header
    block header
    ul
     for name in links
-     li: a(href='#'+name) #{name}
+     li: a(href='#'+name) #{name} 
   block content
   footer
    ul
@@ -19,4 +20,4 @@ html
     li made by #{author}
     li &copy;#{year}
   for scriptURL in scriptsURLs
-   script(src=scriptURL,type="text/javascript")
+   script(src="./js/"+scriptURL,type="text/javascript")
