@@ -1,0 +1,51 @@
+@font-face {
+  name: 'RalewayL';
+  src: '../font/Raleway-Light.ttf';
+}
+@font-face {
+  name: 'RalewayEB';
+  src: '../font/Raleway-ExtraBold.ttf';
+}
+body,
+html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+header {
+  text-transform: uppercase;
+  width: 100%;
+  background-color: #222222;
+  padding: 5%;
+}
+header h1 {
+  color: #cc0000;
+  margin: 0;
+  width: 100%;
+  text-align: justify;
+  padding: 0;
+}
+header h2 {
+  color: #eeeeee;
+}
+header li {
+  display: inline;
+}
+header li:before {
+  content: '\&bull;';
+}
+header li:first-child:before {
+  content: '';
+}
+header li a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-family: RalewayEB, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: RalewayEB, Helvetica, sans-serif;
+}
