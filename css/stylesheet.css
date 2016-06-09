@@ -30,6 +30,7 @@ html {
   box-sizing: border-box;
   background-color: #f1f1f1;
   font-family: Arvo, Georgia, serif;
+  color: #222222;
 }
 h1,
 h2,
@@ -58,6 +59,21 @@ section {
 }
 p {
   line-height: 170%;
+}
+a {
+  color: #555555;
+}
+a:hover {
+  color: #222222;
+}
+a:active {
+  color: #cc0000;
+}
+cite {
+  font-style: normal;
+}
+cite a {
+  text-decoration: none;
 }
 header {
   box-sizing: border-box;
@@ -112,4 +128,7 @@ header ul li a {
 }
 .idLink:hover {
   color: #222222;
+}
+.idLink:active {
+  color: #cc0000;
 }
