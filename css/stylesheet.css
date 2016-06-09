@@ -1,10 +1,26 @@
 @font-face {
-  font-family: 'RalewayEB';
+  font-family: 'Raleway';
   src: url('../font/Raleway-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'RalewayL';
+  font-family: 'Raleway';
   src: url('../font/Raleway-Light.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arvo';
+  src: url('../font/Arvo-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ArvoB';
+  src: url('../font/Arvo-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
 }
 body,
 html {
@@ -13,13 +29,15 @@ html {
   margin: 0;
   box-sizing: border-box;
   background-color: #f1f1f1;
+  font-family: Arvo, Georgia, serif;
 }
 h1,
 h2,
 h3 {
   text-transform: uppercase;
   vertical-align: middle;
-  font-family: RalewayEB, Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 800;
 }
 h1.inline,
 h2.inline,
@@ -37,6 +55,9 @@ h3 {
 }
 section {
   margin: 5%;
+}
+p {
+  line-height: 170%;
 }
 header {
   box-sizing: border-box;
@@ -56,8 +77,8 @@ header h1 {
 header h2 {
   color: #f1f1f1;
   width: 100%;
-  font-family: RalewayL, Helvetica, sans-serif;
   font-size: 2vw;
+  font-weight: 200;
 }
 header ul {
   padding: 0;
@@ -77,10 +98,12 @@ header ul li:first-child:before {
 header ul li a {
   color: #f1f1f1;
   text-decoration: none;
-  font-family: RalewayL, Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 200;
 }
 .idLink {
-  font-family: RalewayL, Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 200;
   text-decoration: none;
   vertical-align: middle;
   font-size: 2vw;
