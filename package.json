@@ -26,6 +26,6 @@
     "pug":"^2.0.0-alpha7",
     "smoothscroll":"0.2.2",
     "flexboxgrid":"6.3.0",
-    "less":"2.7.1"
+    "less":"1.7.5"
   }
 }

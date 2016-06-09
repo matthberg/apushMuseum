@@ -1,12 +1,20 @@
--var US = "United States of America"
--var Sov = "Soviet Unition"
 mixin item(title,src,year,country,where)
  figure.museumItem
   img(src="./img/"+src,alt=title)
   figcaption
    h3 #{title}
    ul.caps
-    li Year: #{year}
-    li Country: #{country}
-    li In Museum: #{where}
+    if year
+     li
+      b Year: 
+      |#{year}
+    if country
+     li
+      b Country: 
+      |#{country}
+    if where
+     li
+      b In Museum: 
+      |#{where}
    block
+   

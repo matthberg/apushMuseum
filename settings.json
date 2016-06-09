@@ -5,5 +5,7 @@
  "scriptsURLs":["./js/smoothscroll.js"],
  "links":["introduction","layout","catalog","sources"],
  "author":"Matthew Sundberg",
- "year":2016
+ "year":2016,
+ "US":"United States of America",
+ "Sov":"Soviet Union"
 }

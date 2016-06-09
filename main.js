@@ -3,9 +3,9 @@ var fs = require('fs');
 var less = require('less');
 var locals = require('./settings.json');
 console.log('Loaded requirements...');
-// Less
-less.render(fs.readFileSync('./css/stylesheet.less'),function(error, output) {fs.writeFileSync('});
-
+// Less & Pug
+less.render(fs.readFileSync('./css/stylesheet.less').toString(),function(error, output) {fs.writeFileSync('../apushMuseumCompile/css/stylesheet.css', output)});
+console.log('Safely through less...');
 var fn = pug.compileFile('./index.pug');
 console.log('Safely through pug...');
 // Render and save

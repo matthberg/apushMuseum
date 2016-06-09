@@ -3,14 +3,13 @@ html
  head
   title= title
   for styleURL in stylesURLs
-   link(rel='stylesheet',src=styleURL,type='text/css')
+   link(rel='stylesheet',href=styleURL,type='text/css')
  body
   header
-   img(src=logoURL,alt=title)
-   nav
-    ul
-     for name in links
-      li: a(href='#'+name) #{name}
+   block header
+   ul
+    for name in links
+     li: a(href='#'+name) #{name}
   block content
   footer
    ul

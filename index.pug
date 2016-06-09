@@ -1,5 +1,8 @@
 extends ./template.pug
 include ./mixins.pug
+block header
+ h1 cold war museum
+ h2 apush museum assignment | matthew sundberg
 block content
  //-INTRODUCTION
  h1#introduction introduction
@@ -18,5 +21,7 @@ block content
  
  //- CATALOG
  h1#catalog catalog
- +item("poster","poster.png",1999,)
-  
+ +item("poster","poster.png",1999,US)
+  p This item is a poster. very fascinating
+ +item("lol","sf.png",134,Sov)
+  p fefefefefef
