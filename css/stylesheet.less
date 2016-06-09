@@ -2,6 +2,7 @@
 @black: #222;
 @white: #f1f1f1;
 @gray: #888;
+@dgray: #555;
 
 @font-face {
  font-family: 'Raleway';
@@ -38,6 +39,7 @@ body,html {
  box-sizing: border-box;
  background-color: @white;
  font-family: Arvo, Georgia, serif;
+ color: @black;
 }
 
 h1,h2,h3 {
@@ -63,6 +65,23 @@ section {
 
 p {
  line-height: 170%;
+}
+
+a {
+ color: @dgray;
+ &:hover {
+  color: @black;
+ }
+ &:active {
+  color: @red;
+ }
+}
+
+cite {
+ font-style: normal;
+ a {
+  text-decoration: none;
+ }
 }
 
 header {
@@ -118,5 +137,8 @@ header {
  color: @gray;
  &:hover {
   color: @black;
+ }
+ &:active {
+  color: @red;
  }
 }

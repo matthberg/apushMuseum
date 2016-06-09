@@ -23,3 +23,14 @@ mixin section(title)
   a(href="#"+title).idLink #
   h2.inline #{title}
   block
+
+mixin cite(title)
+ cite
+  |(
+  if block
+   a(href="#"+title.reference) block
+  if !block
+   a(href="#"+title.reference) #{title.reference}
+  |)
+   
+ 

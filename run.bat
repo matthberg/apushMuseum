@@ -1,7 +1,8 @@
+@ECHO OFF
 TITLE Launch Test
+cls
+:run
 node main.js
-cd ../apushMuseumCompile
-firefox file:///%cd%/index.html
-cd ../apushMuseum
+firefox file:///%cd%/../apushMuseumCompile/index.html
 pause
-run
+goto run

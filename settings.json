@@ -6,5 +6,9 @@
  "author":"Matthew Sundberg",
  "year":2016,
  "US":"United States of America",
- "Sov":"Soviet Union"
+ "Sov":"Soviet Union",
+ 
+ "bob": {
+  "reference":"bobob"
+ }
 }
