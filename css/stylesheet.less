@@ -104,34 +104,34 @@ header {
   font-size: 2vw;
   font-weight: 200;
  }
- ul {
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  li {
-   display: inline;
-   &:before {
-    content: '  \2605  ';
-    color: @red;
-   }
-   &:first-child:before {
-    content: '';
-   }
-   a {
-    color: @white;
-    text-decoration: none;
-    font-family: Raleway, Helvetica, sans-serif;
-    font-weight: 200;
-   }
+}
+ul.inlineNav {
+ padding: 0;
+ box-sizing: border-box;
+ width: 100%;
+ li {
+  display: inline;
+  &:before {
+   content: '  \2605  ';
+   color: @red;
+  }
+  &:first-child:before {
+   content: '';
+  }
+  a {
+   color: @white;
+   text-decoration: none;
+   font-family: Raleway, Helvetica, sans-serif;
+   font-weight: 200;
   }
  }
 }
-
+ 
 .idLink {
  font-family: Raleway, Helvetica, sans-serif;
  font-weight: 200;
  text-decoration: none;
- vertical-align:middle;
+ vertical-align: middle;
  font-size: 2vw;
  margin-right: 5px;
  color: @gray;
@@ -140,5 +140,21 @@ header {
  }
  &:active {
   color: @red;
+ }
+}
+
+footer {
+ bottom: 0;
+ box-sizing: border-box;
+ text-transform: uppercase;
+ width: 100%;
+ padding: 1% 0;
+ font-family: Raleway, Helvetica, sans-serif;
+ font-weight: 200;
+ background-color: @black;
+ text-align: center;
+ color: @white;
+ ul {
+  margin: 0;
  }
 }

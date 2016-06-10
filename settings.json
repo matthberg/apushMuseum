@@ -7,8 +7,13 @@
  "year":2016,
  "US":"United States of America",
  "Sov":"Soviet Union",
- 
- "bob": {
-  "reference":"bobob"
- }
+ "citations":[
+  {
+   "author":["bob","bollocks"],
+   "title":"lol Lol lOl"
+  },
+  {
+   "title":"Bloody Ell"
+  }
+ ]
 }

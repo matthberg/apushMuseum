@@ -8,15 +8,15 @@ html
  body
   header
    block header
-   ul
+   ul.inlineNav
     for name in links
-     li: a(href='#'+name) #{name} 
+     li: a(href='#'+name)= name 
   block content
   footer
-   ul
-    li= title
+   ul.inlineNav
+    li: a(href='#')= title
     for name in links
-     li: a(href='#'+name) #{name}
+     li: a(href='#'+name)= name 
     li made by #{author}
     li &copy;#{year}
   for scriptURL in scriptsURLs
