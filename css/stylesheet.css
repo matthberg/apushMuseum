@@ -96,22 +96,22 @@ header h2 {
   font-size: 2vw;
   font-weight: 200;
 }
-header ul {
+ul.inlineNav {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
 }
-header ul li {
+ul.inlineNav li {
   display: inline;
 }
-header ul li:before {
+ul.inlineNav li:before {
   content: '  \2605  ';
   color: #cc0000;
 }
-header ul li:first-child:before {
+ul.inlineNav li:first-child:before {
   content: '';
 }
-header ul li a {
+ul.inlineNav li a {
   color: #f1f1f1;
   text-decoration: none;
   font-family: Raleway, Helvetica, sans-serif;
@@ -131,4 +131,19 @@ header ul li a {
 }
 .idLink:active {
   color: #cc0000;
+}
+footer {
+  bottom: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1% 0;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 200;
+  background-color: #222222;
+  text-align: center;
+  color: #f1f1f1;
+}
+footer ul {
+  margin: 0;
 }
