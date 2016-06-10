@@ -9,11 +9,44 @@
  "Sov":"Soviet Union",
  "citations":[
   {
-   "author":["bob","bollocks"],
-   "title":"lol Lol lOl"
+   "author":["David","Crowley"],
+   "title":"Cold War Modern: Design 1945-1970 Fear and Fashion in the Cold War Posters of the Cold War",
+   "sponsor":"V&A Publishing",
+   "date":"2008",
+   "medium":"book"
   },
   {
-   "title":"Bloody Ell"
+   "title":"The Cold War Economy",
+   "sponsor":"The Independent Institute",
+   "author":["Robert","Higgs"],
+   "date":"July 1, 1994"
+  },
+  {
+   "title":"McCarthyism",
+   "sponsor":"USHistory.org, Independence Hall Association in Philadelphia"
+  },
+  {
+   "title":"Recognition of the Soviet Union, 1933",
+   "sponsor":"Office of the Historian, US Department of State"
+  },
+  {
+   "title":"Red Army",
+   "sponsor":"Encyclopaedia Britannica",
+   "date":"October 26, 2015"
+  },
+  {
+   "title":"The U-2 Incident",
+   "sponsor":"The Cold War Museum",
+   "author": ["Gary","Roberson"]
+  },
+  {
+   "title":"The United States, the Soviet Union, and the End of World War II",
+   "sponsor":"Office of the Historian, US Department of State",
+   "date":"May 2005"
+  },
+  {
+   "title":"The Yalta Conference. 1945",
+   "sponsor":"Office of the Historian, US Department of State"
   }
  ]
 }

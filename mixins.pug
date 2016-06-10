@@ -1,31 +1,41 @@
-mixin item(title,src,year,country,where)
- figure.museumItem
-  img(src="./img/"+src,alt=title)
+mixin item(title,src,year,location,where,citation,videoReplace)
+ figure.small
+  a.close(href="") &#x2715;
+  if /\.(jpg|png|jpeg|gif|)$/.test(src)
+   img(src='./img/'+src,alt=title).itemMedia
+  if /^https?:\/\/www\.youtube\.com/.test(src)
+   img(src='./img/'+videoReplace,alt=title).toggleHide
+   iframe(width='420',height='315',src=src,frameborder='0',allowfullscreen).toggleShow.itemMedia
+  h4=title
   figcaption
    h3= title
+   cite= citation
    ul.caps
     if year
      li
-      b Year: #{year}
-    if country
+      b Year: 
+      |#{year}
+    if location
      li
-      b Country: #{country}
+      b Location: 
+      |#{location}
     if where
      li
-      b In Museum: #{where}
+      b In Museum: 
+      |#{where}
    block
 
 mixin section(title)
  section(id=title)
-  a(href="#"+title).idLink #
+  a(href='#'+title).idLink #
   h2.inline= title
   block
 
 mixin cite(source)
- -name = source.split(' ')[0];
+ -name = source.replace(/[,\.\s]/g,'');
  -name = name.charAt(0).toUpperCase() + name.slice(1);
  cite (
-  a(href="#cite"+name)= source
+  a(href='#cite'+name)= source
   |)
   
   
@@ -33,9 +43,9 @@ mixin cite(source)
 mixin bibliography(sources)
  ul
   for source in sources
-   -if(source.author){name = source.author[1]} else if(source.title){name = source.title.split(' ')[0]};
+   -if(source.author){name = source.author[1]} else if(source.title){name = source.title.replace(/[,\.\s]/g,'')};
    -name = name.charAt(0).toUpperCase() + name.slice(1);
-   li(id="cite"+name)
+   li(id='cite'+name)
     if source.author
      |#{source.author[1]}, #{source.author[0]}. 
     if source.title
@@ -46,4 +56,7 @@ mixin bibliography(sources)
      |#{source.date}. 
     else
      |n.d. 
-    |Web.
+    if source.medium
+     |#{source.medium}.
+    else
+     |Web.
