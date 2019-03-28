@@ -17,16 +17,14 @@
     "museum"
   ],
   "author": "Matthew Sundberg",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/matthberg/apushMuseum/issues"
   },
   "homepage": "https://github.com/matthberg/apushMuseum#readme",
   "dependencies": {
     "pug":"^2.0.0-alpha7",
-    "smoothscroll":"0.2.2",
-    "flexboxgrid":"6.3.0",
-    "less":"1.7.5",
-    "jquery":"1.7.4"
+    "smoothscroll":"^0.2.2",
+    "flexboxgrid":"^6.3.0",
+    "less":"^1.7.5"
   }
 }
