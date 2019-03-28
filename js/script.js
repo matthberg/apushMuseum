@@ -1,5 +1,10 @@
-$(document).ready(function(){
-    $("figure").click(function(){
-        $(this).removeClass("small").addClass("fill").attr('id','active');
-    });
+window.onload(function(){
+	let figures = document.getElementsByTagName('figure');
+	for(figure in figures){
+		figure.onclick = function(){
+			figure.classList.remove('small');
+			figure.classList.add('fill');
+			figure.id = 'active';
+		};
+	}
 });
